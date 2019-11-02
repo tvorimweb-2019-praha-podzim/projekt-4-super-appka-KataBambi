@@ -31,3 +31,124 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.menu {
+	display: inline-flex; 
+    list-style: none;
+    background: white;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.menu li {
+    padding: 15px 30px;
+    align-items: space-between;
+}
+
+.menu a {
+    text-decoration: none; /*zrušeno podtrhávání odkazu*/
+    color: black;
+}
+
+.pozadi {
+    height: 450px;
+    background-image: url("images/pozadi.jpg");
+    background-size: cover;
+    position: relative;
+    padding: 0 0 0 40px; /*horní pravý spodní levý*/
+}
+
+.telefon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 45px;hffffff
+    padding-bottom: 20px;
+    margin-left: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.tlacitka {
+    list-style: none;
+    margin: 35px 0;
+    padding: 0;
+    display: inline-flex;
+}
+ 
+.tlacitka a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 20px; 
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 20px rgba(32, 32, 32, 0.2);
+    margin-right: 30px;
+    margin-left: 15px;
+}
+
+.tlacitka a:hover,
+.tlacitka a:focus,
+.tlacitka a:active {
+  background-color: #48418e;
+}
+
+.moznosti {
+    display: flex;
+}
+
+.prvni,
+.druhy,
+.treti {
+    flex: 1 1 calc(100%/3);
+    padding: 30px;
+    text-align: center;
+}
+
+.ikona {
+    width: 65px;
+}
+
+.prvni h2,
+.druhy h2,
+.treti h2 {
+    color: #48418e;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.text {
+    font-size: 15px;
+}
+
+footer {
+    background-color: #48418e;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
